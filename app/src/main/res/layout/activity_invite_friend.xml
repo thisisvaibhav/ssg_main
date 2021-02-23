@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".Activitys.InviteFriend">
+    
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back12"/>
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:src="@drawable/friendicon"
+            android:layout_gravity="center"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="$5.0"
+            android:textColor="@color/textcolor"
+            android:fontFamily="@font/segoeuibold"
+            android:textSize="40dp"/>
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Invite your friend and get 5 coins! "
+            android:textColor="#D5000000"
+            android:fontFamily="@font/segoe_ui"
+            android:textSize="16dp"/>
+
+
+
+        <TextView
+
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod  magna aliquyam erat,  "
+            android:textColor="#79000000"
+            android:fontFamily="@font/segoe_ui"
+            android:textSize="13dp"/>
+
+        <RelativeLayout
+            android:layout_margin="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/friendbackground">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:text="Sds767"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/textcolor"
+                android:layout_centerVertical="true"/>
+
+
+            <TextView
+                android:layout_marginRight="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:text="Copy code"
+                android:textColor="#004DB1"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+    
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:id="@+id/image"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text"/>
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rel_share"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/home_bottom_background">
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:text="Invite Friend"
+            android:fontFamily="@font/segoeuibold"
+            android:textSize="16dp"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

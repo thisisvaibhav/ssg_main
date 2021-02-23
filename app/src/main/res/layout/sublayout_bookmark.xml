@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="260dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_centerHorizontal="true"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            app:cardBackgroundColor="@color/background"
+            app:cardCornerRadius="12dp"
+            >
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <ImageView
+                    android:id="@+id/bookimage"
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:src="@drawable/aa6"/>
+
+        <TextView
+            android:id="@+id/txt_diconect"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/textcolor"
+            android:textSize="10dp"
+            android:text="Flat 15% off @ Cairon"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/segoe_ui"/>
+
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="8dp"
+                        app:cardBackgroundColor="#004DB1"
+                        app:cardElevation="5dp">
+
+
+                        <RelativeLayout
+                            android:padding="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <TextView
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Get Reward"
+                                android:textSize="7dp"
+                                android:textColor="@color/background"
+                                android:fontFamily="@font/segoeuibold"/>
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                        <ImageView
+                            android:id="@+id/un_bookmark"
+                            android:layout_width="15dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/bookmark1"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"/>
+
+
+                </RelativeLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    <TextView
+        android:id="@+id/txt_companyname"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:text="Ending Soon "
+        android:fontFamily="@font/segoeuibold"
+        android:textSize="14dp"
+        android:textColor="@color/textcolor"
+        android:textAlignment="center"/>
+
+
+</RelativeLayout>

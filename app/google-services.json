@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "654849523497",
+    "project_id": "stepsetgo-3d185",
+    "storage_bucket": "stepsetgo-3d185.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654849523497:android:ad591944b2ad23fb0d4138",
+        "android_client_info": {
+          "package_name": "com.example.ssg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "654849523497-v611200sdt0vbgivr544s3npacc9sfst.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8pwF1wOSKlstIzi-YzP8fPNzRutq0CUw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "654849523497-v611200sdt0vbgivr544s3npacc9sfst.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

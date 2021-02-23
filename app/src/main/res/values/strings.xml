@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">StepSetGo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="no_sensor">Sensor not found</string>
+    <string name="no_sensor_explain">This app requires a dedicated hardware step sensor - which your device does not have. This app won\'t run on your device.</string>
+    <string name="permission_external_storage">No permission to access external storage</string>
+    <string name="facebook_app_id">779565186246526</string>
+    <!--
+    <string name="facebook_app_id">378874186574719</string>
+-->
+    <string name="fb_login_protocol_scheme">fb779565186246526</string>
+    <string name="flat_15_off_cairon">Flat 15% off @ Cairon</string>
+    <string name="free">Free</string>
+    <!--   <string name="fb_login_protocol_scheme">fb378874186574719</string>-->
+    <string name="webid">654849523497-v611200sdt0vbgivr544s3npacc9sfst.apps.googleusercontent.com</string>
+    <string name="sign_up_to_create_your_account">Sign Up to create your Account</string>
+    <string name="please_enter_the_code_sent_to">Please enter the code sent to:</string>
+    <string name="_1_213_202_355">+1 213 202 355</string>
+    <string name="err_internet">It seems that you don\'t have internet connection!!</string>
+    <string name="enter_the_verification_code">Enter the verification code</string>
+    <string name="_6655588777">6655588777</string>
+    <string name="next">NEXT</string>
+    <string name="firstname">firstname</string>
+    <string name="lastname">lastname</string>
+    <string name="last_name">Last Name</string>
+    <string name="save">SAVE</string>
+    <string name="enter_details">Enter Details</string>
+    <string name="enter_registered_number">Enter Registered Number</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="enter_number">Enter Number</string>
+    <string name="country_code">Country Code</string>
+
+</resources>

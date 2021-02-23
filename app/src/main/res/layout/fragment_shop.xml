@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".Activitys.Fragment.ShopFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="end">
+
+
+            <ImageView
+                android:id="@+id/bookmare"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="24dp"
+                android:src="@drawable/bookmark" />
+
+            <ImageView
+                android:id="@+id/img_cart"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="24dp"
+                android:src="@drawable/cart" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="24dp"
+                android:src="@drawable/trophy" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/search_id"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/top"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/search_box_background"
+            android:elevation="3dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/search_btn"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_search_24" />
+
+            <EditText
+                android:id="@+id/edt_search_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="Add/Find Friends"
+                android:textColor="#000000"
+                android:textColorHint="#65000000"
+                android:textSize="13dp" />
+
+
+        </LinearLayout>
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_id"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:visibility="gone"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="#004DB1"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="#000000"
+            app:tabTextColor="#729A9696"
+
+            />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tablayout"
+            android:visibility="gone"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/all"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoe_ui"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="All Offers"
+                        android:textColor="@color/textcolor"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:id="@+id/v1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#004DB1" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lin_free"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoe_ui"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Free"
+                        android:textColor="@color/textcolor"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:id="@+id/v2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#004DB1" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lin_access"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoe_ui"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Accessories"
+                        android:textColor="@color/textcolor"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:id="@+id/v3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#004DB1" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/apparel"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoe_ui"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Apparel"
+                        android:textColor="@color/textcolor"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:id="@+id/v4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#004DB1" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/food_beverage"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoe_ui"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Food Beverage"
+                        android:textColor="@color/textcolor"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:id="@+id/v5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#004DB1" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/footwear"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoe_ui"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Footwear"
+                        android:textColor="@color/textcolor"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:id="@+id/v6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#004DB1" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lin_health"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoe_ui"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Health_Wellness"
+                        android:textColor="@color/textcolor"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:id="@+id/v7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#004DB1" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lin_jewellery"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoe_ui"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Jewellery"
+                        android:textColor="@color/textcolor"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:id="@+id/v8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#004DB1" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lin_personalcare"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoe_ui"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Personalcare"
+                        android:textColor="@color/textcolor"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:id="@+id/v9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#004DB1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_sleepsolution"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoe_ui"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Sleepsolution"
+                        android:textColor="@color/textcolor"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:id="@+id/v10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#004DB1" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lin_subscription"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoe_ui"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Subscription"
+                        android:textColor="@color/textcolor"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:id="@+id/v11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#004DB1" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lin_Others"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoe_ui"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Others"
+                        android:textColor="@color/textcolor"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:id="@+id/v12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#004DB1" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lin_daily"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoe_ui"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Daily Rewards"
+                        android:textColor="@color/textcolor"
+                        android:textSize="13dp" />
+
+                    <View
+                        android:id="@+id/v14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#004DB1" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+
+        <FrameLayout
+            android:id="@+id/framelayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

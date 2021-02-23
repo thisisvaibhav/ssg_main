@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Activitys.SelectIssueActivity">
+
+
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_margin="24dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/top">
+
+
+        <ImageView
+            android:id="@+id/back12"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back12"/>
+
+
+        <TextView
+            android:layout_weight="5"
+            android:layout_marginLeft="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Issue"
+            android:fontFamily="@font/segoeuibold"
+            android:textSize="15dp"
+            android:textColor="@color/textcolor"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="24dp">
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/rel_issue1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+
+            <TextView
+                android:layout_marginRight="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1) My Purchased coupen code is not working"
+                android:textColor="@color/textcolor"
+                android:fontFamily="@font/segoe_ui"
+                android:textSize="15dp"/>
+
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/next"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"/>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rel_issue2"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+
+            <TextView
+                android:layout_marginRight="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2) My Product has not yet been delivered"
+                android:textColor="@color/textcolor"
+                android:fontFamily="@font/segoe_ui"
+                android:textSize="15dp"/>
+
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/next"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"/>
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

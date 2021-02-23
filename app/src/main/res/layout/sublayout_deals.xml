@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="180dp"
+    android:orientation="vertical"
+    android:id="@+id/lin_item"
+    android:background="@color/background">
+
+
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="150dp"
+        android:id="@+id/image_bannerapparel"
+        android:src="@drawable/aaa"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+
+    <TextView
+        android:layout_weight="3"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gaming Headphones"
+        android:fontFamily="@font/segoe_ui"
+        android:textSize="12dp"
+        android:textColor="#B0000000"/>
+
+<ImageView
+    android:id="@+id/imag_bookmark"
+    android:layout_marginTop="3dp"
+    android:layout_weight="1"
+    android:layout_width="15dp"
+    android:layout_height="15dp"
+    android:src="@drawable/bookmark1"
+    android:layout_gravity="center"/>
+
+</LinearLayout>
+
+</LinearLayout>

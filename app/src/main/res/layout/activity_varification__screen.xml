@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".ui.Verification_Screen">
+
+
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/varification" />
+
+
+   <LinearLayout
+       android:padding="20dp"
+       android:gravity="center"
+       android:layout_marginTop="40dp"
+       android:id="@+id/aaa"
+       android:layout_below="@+id/logo"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+
+       <TextView
+           android:layout_gravity="center_horizontal"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/please_enter_the_code_sent_to"
+           android:textSize="12sp"
+           android:textColor="@color/textcolor"
+           android:fontFamily="@font/segoe_ui"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/phonenuber"
+           android:text="@string/_1_213_202_355"
+           android:textSize="14sp"
+           android:textColor="@color/textcolor"
+           android:fontFamily="@font/segoeuibold"/>
+
+   </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_the_verification_code"
+        android:textColor="#D3000000"
+        android:textSize="12sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/segoe_ui"/>
+
+    <in.aabhasjindal.otptextview.OtpTextView
+        android:id="@+id/otp_view"
+        android:layout_width="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        app:height="48dp"
+        app:width="48dp"
+        app:bar_enabled="true"
+        app:bar_height="2dp"
+        app:length="4"
+        app:otp="1234"
+        app:otp_text_size="24dp"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_next"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        app:cardBackgroundColor="#004DB1"
+        app:cardCornerRadius="12dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        app:cardElevation="3dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/tvNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/segoeuibold"
+                android:text="@string/next"
+                android:textColor="@color/background"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

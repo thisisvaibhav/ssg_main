@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    tools:context=".Activitys.Fragment.ProgressFragment">
+
+
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingBottom="60dp"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false" android:orientation="horizontal">
+
+
+
+                <LinearLayout
+                    android:id="@+id/lin_fitness"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="39,875"
+                        android:textSize="25dp"
+                        android:fontFamily="@font/segoe_ui"
+                        android:textColor="@color/textcolor"
+                        android:textAlignment="center"
+                        android:gravity="center_horizontal" />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total Steps"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/segoe_ui"
+                        android:textColor="@color/textcolor"
+                        android:textAlignment="center"
+                        android:gravity="center_horizontal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="76.21"
+                        android:textSize="25dp"
+                        android:fontFamily="@font/segoe_ui"
+                        android:textColor="@color/textcolor"
+                        android:textAlignment="center"
+                        android:gravity="center_horizontal" />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total coins Earned"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/segoe_ui"
+                        android:textColor="@color/textcolor"
+                        android:textAlignment="center"
+                        android:gravity="center_horizontal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Coins"
+                android:textColor="@color/textcolor"
+                android:textSize="16dp"
+                android:fontFamily="@font/segoe_ui"/>
+
+            <TextView
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="76.21"
+                android:textColor="#004DB1"
+                android:textSize="16dp"
+                android:fontFamily="@font/segoe_ui"/>
+        </RelativeLayout>
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:textSize="14dp"
+    android:textColor="@color/textcolor"
+    android:text="Current Balance"
+    android:layout_marginTop="20dp"
+    android:fontFamily="@font/segoe_ui"/>
+
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/viewtrancation"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="#B3000000"
+                    app:cardCornerRadius="12dp"
+                  >
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="View Transaction "
+                            android:textColor="@color/background"
+                            android:textSize="14dp"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/segoe_ui"/>
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="#004DB1"
+                    app:cardCornerRadius="12dp"
+                  >
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Spend Coins"
+                            android:textColor="@color/background"
+                            android:textSize="14dp"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/segoe_ui"/>
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Step Taken
+"
+                    android:textColor="@color/textcolor"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/segoe_ui"/>
+
+                <TextView
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View History"
+                    android:textColor="#004DB1"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/segoe_ui"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textSize="14dp"
+                android:textColor="@color/textcolor"
+                android:text="Past 7 Days"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/segoe_ui"/>
+
+
+
+
+            <org.eazegraph.lib.charts.BarChart
+                android:layout_marginTop="30dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/barchart"
+                android:layout_width="match_parent"
+                android:layout_height="256dp"
+                android:padding="10dp"
+                app:egFixedBarWidth="true"
+                app:egBarWidth="20dp"
+                app:egLegendHeight="50dp"/>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:baselineAligned="false" android:orientation="horizontal">
+
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/sublayout_progress"
+                   >
+
+
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="28,256"
+                            android:textColor="@color/textcolor"
+                            android:textSize="14dp"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/segoe_ui"/>
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Steps"
+                            android:textColor="@color/textcolor"
+                            android:textSize="14dp"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/segoe_ui"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/sublayout_progress"
+                  >
+
+
+
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="28,256"
+                            android:textColor="@color/textcolor"
+                            android:textSize="14dp"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/segoe_ui"/>
+
+
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Average Steps"
+                            android:textColor="@color/textcolor"
+                            android:textSize="14dp"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/segoe_ui"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="@color/textcolor"
+                    android:text="Offer Purchased(0)"
+                    android:fontFamily="@font/segoe_ui"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#004DB1"
+                    android:text="Offer Purchased(0)"
+                    android:fontFamily="@font/segoe_ui"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:id="@+id/home11" android:title="Home" android:icon="@drawable/home1"
+    app:cnb_backgroundColor="@color/my_menu_badge_color"
+    app:cnb_iconColor="@color/white"
+    app:cnb_iconTintMode="src_in"
+    app:cnb_textColor="@color/white" />
+<item android:id="@+id/friend" android:title="Friends" android:icon="@drawable/friends"
+    app:cnb_backgroundColor="@color/my_menu_badge_color"
+    app:cnb_iconColor="@color/white"
+    app:cnb_iconTintMode="src_in"
+    app:cnb_textColor="@color/white"/>
+<item android:id="@+id/bazar" android:title="Bazzar" android:icon="@drawable/soccer"
+    app:cnb_backgroundColor="@color/my_menu_badge_color"
+    app:cnb_iconColor="@color/white"
+    app:cnb_iconTintMode="src_in"
+    app:cnb_textColor="@color/white"/>
+<item android:id="@+id/arene" android:title="Arene" android:icon="@drawable/arene1"
+    app:cnb_backgroundColor="@color/my_menu_badge_color"
+    app:cnb_iconColor="@color/white"
+    app:cnb_iconTintMode="src_in"
+    app:cnb_textColor="@color/white"/>
+<item android:id="@+id/user" android:title="user" android:icon="@drawable/user"
+    app:cnb_backgroundColor="@color/my_menu_badge_color"
+    app:cnb_iconColor="@color/white"
+    app:cnb_iconTintMode="src_in"
+    app:cnb_textColor="@color/white"/>
+</menu>
